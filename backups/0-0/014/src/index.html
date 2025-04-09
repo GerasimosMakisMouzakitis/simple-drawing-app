@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple Drawing App</h1>
+
+    <!-- Line Drawing Modes -->
+    <div id="lineDrawingModes">
+        <h3>Line Drawing Modes</h3>
+        <label for="drawingMode">Select Drawing Mode:</label>
+        <select id="drawingMode">
+            <option value="click">Click to Draw</option>
+            <option value="coordinates">Enter Coordinates</option>
+        </select>
+
+        <!-- Coordinate Input Form -->
+        <div id="coordinateForm" style="display: none; margin-top: 10px;">
+            <h3>Enter Line Coordinates</h3>
+            <label for="startXInput">Start X:</label>
+            <input type="number" id="startXInput">
+            <label for="startYInput">Start Y:</label>
+            <input type="number" id="startYInput">
+            <label for="endXInput">End X:</label>
+            <input type="number" id="endXInput">
+            <label for="endYInput">End Y:</label>
+            <input type="number" id="endYInput">
+            <button id="drawLineButton">Draw Line</button>
+        </div>
+
+        <div id="snapToGridToggle" style="margin-top: 10px;">
+            <label for="snapToGridCheckbox">
+                <input type="checkbox" id="snapToGridCheckbox"> Snap to Grid
+            </label>
+        </div>
+
+        <div id="snapToMidpointToggle" style="margin-top: 10px;">
+            <label for="snapToMidpointCheckbox">
+                <input type="checkbox" id="snapToMidpointCheckbox"> Snap to Midpoint of Line
+            </label>
+        </div>
+    </div>
+
+    <canvas id="drawingCanvas" width="1000" height="1000"></canvas>
+
+    <footer>
+        <p><strong>Version:</strong> Alpha 0.0.13</p>
+        <p><strong>Author:</strong> Gerasimos Makis Mouzakitis</p>
+        <p><strong>Last Update:</strong> April 6, 2025</p>
+        <p>&copy; 2025 Gerasimos Makis Mouzakitis. All rights reserved.</p>
+        <button id="showPropertiesButton">Show Line Properties</button>
+    </footer>
+
+    <!-- Properties Window -->
+    <div id="propertiesWindow" style="display: none; border: 1px solid black; padding: 10px; position: absolute; background: white; cursor: move;">
+        <h3>Line Properties</h3>
+        <p><strong>Start Point:</strong> (<span id="startX">-</span>, <span id="startY">-</span>)</p>
+        <p><strong>End Point:</strong> (<span id="endX">-</span>, <span id="endY">-</span>)</p>
+        <p><strong>Length:</strong> <span id="lineLength">-</span></p>
+        <button id="closePropertiesButton">Close</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "simple-drawing-app",
+  "version": "0.2.10",
+  "description": "A simple drawing application to draw lines between two points with snapping, selection, and customization features.",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'No build step required for this project.'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "Gerasimos Makis Mouzakitis",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-repository/simple-drawing-app.git"
+  },
+  "keywords": [
+    "drawing",
+    "canvas",
+    "lines",
+    "snap-to-grid",
+    "javascript",
+    "web-app"
+  ]
+}

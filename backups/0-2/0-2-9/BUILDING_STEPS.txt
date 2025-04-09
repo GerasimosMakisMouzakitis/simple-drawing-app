@@ -1,0 +1,76 @@
+# Building Steps for Simple Drawing App
+
+## Step 1: Initialize the App
+- Display the app title and a 1000x1000 canvas.
+- Create the following files:
+  - `index.html`
+  - `src/js/app.js`
+  - `src/js/canvas.js`
+  - `src/js/utils.js`
+  - `src/js/config.js`
+- Ensure the canvas is initialized and displayed correctly.
+- Log the app version and initialization status in the console.
+
+## Step 2: Add Line Drawing
+- Implement basic line drawing functionality in Click to Draw mode.
+- Add event listeners for `mousedown` and `mousemove` in `events.js`.
+- Use `utils.js` for reusable functions like drawing lines.
+- Ensure the drawn lines are stored in the application state (`state.js`).
+- Log the start and end points of each line in the console.
+
+## Step 3: Add Snapping Features
+- Implement the following snapping features:
+  - Snap to Grid
+  - Snap to Midpoint
+  - Snap to Endpoint
+- Use `utils.js` for snapping logic.
+- Add a toggle button for enabling/disabling snapping.
+- Ensure snapping works seamlessly with line drawing.
+
+## Step 4: Add Line Selection
+- Allow users to select a line by clicking on it.
+- Display grips at the start and end points of the selected line.
+- Highlight the selected line for better visibility.
+- Log the selected line's properties in the console.
+
+## Step 5: Add Properties Window
+- Display the properties of the selected line in a draggable window.
+- Include the following properties:
+  - Start Point
+  - End Point
+  - Color
+  - Thickness
+  - Layer
+- Update the properties dynamically when a new line is selected.
+- Allow users to edit the properties in real-time.
+
+## Step 6: Add Combined Snapping
+- Ensure all snapping features work together with the correct priority:
+  1. Snap to Endpoint
+  2. Snap to Midpoint
+  3. Snap to Grid
+- Test snapping behavior for edge cases and overlapping lines.
+
+## Step 7: Add Clear Canvas Functionality
+- Add a "Clear Canvas" button to remove all lines and reset the canvas.
+- Ensure the grid is redrawn after clearing the canvas.
+- Log the canvas clearing action in the console.
+
+## Step 8: Add Settings Menu
+- Add a settings menu for customizing default line properties:
+  - Default Color
+  - Default Thickness
+  - Default Layer
+- Allow users to update these properties dynamically.
+- Store the updated settings in `config.js` and reflect them in new lines.
+
+## Step 9: Add Dynamic Line Preview
+- Show a live preview of the line while moving the mouse after the first click.
+- Use a default preview color (e.g., `gray`) and thickness for the preview line.
+- Ensure the preview line does not interfere with snapping or final line drawing.
+
+## Step 10: Finalize and Test
+- Test all features individually and in combination.
+- Ensure no conflicts between snapping, selection, and drawing.
+- Update the documentation (`README.md`) and functionality log.
+- Prepare the app for release.

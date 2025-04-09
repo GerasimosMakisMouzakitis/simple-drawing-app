@@ -1,0 +1,37 @@
+# Building Steps for Simple Drawing App
+
+## Step 1: Initialize the App
+- Display the app title and a 1000x1000 canvas.
+- Create the following files:
+  - index.html
+  - src/js/app.js
+  - src/js/canvas.js
+  - src/js/utils.js
+- Ensure the canvas is initialized and displayed correctly.
+
+## Step 2: Add Line Drawing
+- Implement basic line drawing functionality in Click to Draw mode.
+- Add event listeners for `mousedown` and `mousemove` in `canvas.js`.
+- Use `utils.js` for reusable functions like drawing lines.
+
+## Step 3: Add Snapping Features
+- Implement Snap to Grid, Snap to Midpoint, and Snap to Endpoint.
+- Use `utils.js` for snapping logic.
+
+## Step 4: Add Line Selection
+- Allow users to select a line by clicking on it.
+- Display grips at the start and end points of the selected line.
+
+## Step 5: Add Properties Window
+- Display the properties of the selected line in a draggable window.
+- Update the properties dynamically when a new line is selected.
+
+## Step 6: Add Combined Snapping
+- Ensure all snapping features work together with the correct priority:
+  1. Snap to Endpoint
+  2. Snap to Midpoint
+  3. Snap to Grid
+
+## Step 7: Finalize and Test
+- Test all features individually and in combination.
+- Update the documentation and functionality log.
