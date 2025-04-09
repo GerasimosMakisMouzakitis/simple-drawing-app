@@ -1,25 +1,46 @@
 # Simple Drawing App
 
+![Simple Drawing App Banner](screenshots/app-banner.png)
+
 **Version:** Alpha 0.2.10  
 **Author:** Gerasimos Makis Mouzakitis  
-**Last Update:** April 8, 2025  
+**Last Update:** April 8, 2025
 
-This is a simple drawing application that allows users to draw lines on a canvas, select them, and view their properties.
+A simple drawing application that allows users to draw lines on a canvas with features like snapping to grid, selection, and customization.
+
+## Screenshots
+
+![Drawing Lines](screenshots/drawing-lines.png)
+*Drawing lines with snap-to-grid enabled*
+
+![Properties Window](screenshots/properties-window.png)
+*Viewing and editing line properties*
+
+![Snapping Features](screenshots/snapping-features.png)
+*Multiple snapping options in action*
 
 ## Features
-- Draw a line between two points by clicking on the canvas.
-- Dynamic line preview while drawing.
-- Each line has the following properties:
-  - **Type**: The type of the line (default: `line`).
-  - **Color**: The color of the line (default: `black`).
-  - **Layer**: The layer of the line (default: `default`).
-  - **Start Point**: The coordinates of the starting point.
-  - **End Point**: The coordinates of the ending point.
-  - **Thickness**: The thickness of the line (default: `2`).
-- Snap to Grid functionality to align lines to a grid.
-- Clear Canvas button to remove all lines and reset the canvas.
+
+- **Line Drawing**: Draw lines by clicking to set start and end points
+- **Dynamic Preview**: See a live preview while drawing lines
+- **Selection**: Select lines by clicking on them
+- **Properties Window**: View and edit line properties
+- **Snapping**:
+  - Snap to Grid: Align points to the nearest grid intersection
+  - Snap to Midpoint: Snap to the midpoint of existing lines
+  - Snap to Endpoint: Snap to the endpoints of existing lines
+- **Clear Canvas**: Remove all lines and reset the canvas
+- **Settings Menu**: Customize default line properties:
+  - Color
+  - Thickness
+  - Layer
 
 ## Changelog
+
+### Version Alpha 0.2.10
+- Updated version metadata in `index.html` and `config.js`.
+- Improved metadata for SEO and social media sharing.
+- Enhanced documentation and README.
 
 ### Version Alpha 0.2.9 Stable
 - Updated version logging to reflect the stable release.
@@ -29,7 +50,8 @@ This is a simple drawing application that allows users to draw lines on a canvas
 
 ## Project Structure
 
-```
+The project is organized as follows:
+
 simple-drawing-app
 ├── src
 │   ├── index.html       # HTML structure of the application
@@ -43,15 +65,12 @@ simple-drawing-app
 ├── CHANGELOG.md         # Log of changes made to the project
 ├── FUNCTIONALITY_LOG.md # Log of implemented functionalities
 └── README.md            # Documentation for the project
-```
 
-## Getting Started
-
-To get started with the Simple Drawing App, follow these steps:
+## Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/your-username/simple-drawing-app.git
    cd simple-drawing-app
    ```
 
@@ -65,9 +84,20 @@ To get started with the Simple Drawing App, follow these steps:
 
 ## Usage
 
-- Click on the canvas to set point A.
-- Move the mouse and click again to set point B.
-- A line will be drawn between the two points.
+1. **Draw a Line**:
+   - Click on the canvas to set the start point.
+   - Move the mouse and click again to set the end point.
+   - A line will be drawn between the two points.
+
+2. **Enable Snapping**:
+   - Click the "Snap to Grid" button to enable/disable snapping to grid.
+
+3. **Select a Line**:
+   - Click on any existing line to select it.
+   - View its properties in the properties window.
+
+4. **Clear Canvas**:
+   - Click the "Clear Canvas" button to remove all lines.
 
 ## TODO
 
@@ -78,8 +108,8 @@ To get started with the Simple Drawing App, follow these steps:
 
 ## Contributing
 
-Feel free to submit issues or pull requests if you have suggestions or improvements for the application.
+Feel free to submit issues or pull requests if you have suggestions or improvements for the application. Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
