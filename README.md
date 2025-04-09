@@ -6,34 +6,31 @@
 **Author:** Gerasimos Makis Mouzakitis  
 **Last Update:** April 8, 2025
 
-A simple drawing application that allows users to draw lines on a canvas with features like snapping to grid, selection, and customization.
+A simple drawing application that allows users to draw lines on a canvas with features like dynamic preview and clearing the canvas.
 
 ## Screenshots
 
-![Drawing Lines](screenshots/drawing-lines.png)
-*Drawing lines with snap-to-grid enabled*
-
-![Properties Window](screenshots/properties-window.png)
-*Viewing and editing line properties*
-
-![Snapping Features](screenshots/snapping-features.png)
-*Multiple snapping options in action*
+*Screenshots will be added once the features are fully implemented.*
 
 ## Features
 
-- **Line Drawing**: Draw lines by clicking to set start and end points
-- **Dynamic Preview**: See a live preview while drawing lines
-- **Selection**: Select lines by clicking on them
-- **Properties Window**: View and edit line properties
-- **Snapping**:
-  - Snap to Grid: Align points to the nearest grid intersection
-  - Snap to Midpoint: Snap to the midpoint of existing lines
-  - Snap to Endpoint: Snap to the endpoints of existing lines
-- **Clear Canvas**: Remove all lines and reset the canvas
-- **Settings Menu**: Customize default line properties:
-  - Color
-  - Thickness
-  - Layer
+- **Line Drawing**: Draw lines by c
+licking to set start and end points.
+- **Dynamic Preview**: See a live preview while drawing lines.
+- **Clear Canvas**: Remove all lines and reset the canvas.
+
+## Planned Features
+
+- [ ] Selection: Select lines by clicking on them.
+- [ ] Delete Line: Remove a specific line from the canvas.
+- [ ] Snapping Features:
+  - Snap to Grid: Align points to the nearest grid intersection.
+  - Snap to Midpoint: Snap to the midpoint of existing lines.
+  - Snap to Endpoint: Snap to the endpoints of existing lines.
+- [ ] Undo/Redo functionality.
+- [ ] Save canvas as an image.
+- [ ] Support for additional shapes (rectangles, circles).
+- [ ] Customizable grid size.
 
 ## Changelog
 
@@ -89,14 +86,10 @@ simple-drawing-app
    - Move the mouse and click again to set the end point.
    - A line will be drawn between the two points.
 
-2. **Enable Snapping**:
-   - Click the "Snap to Grid" button to enable/disable snapping to grid.
+2. **Dynamic Preview**:
+   - While drawing a line, a live preview of the line is displayed.
 
-3. **Select a Line**:
-   - Click on any existing line to select it.
-   - View its properties in the properties window.
-
-4. **Clear Canvas**:
+3. **Clear Canvas**:
    - Click the "Clear Canvas" button to remove all lines.
 
 ## TODO
