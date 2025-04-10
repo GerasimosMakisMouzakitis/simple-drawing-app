@@ -1,6 +1,7 @@
 {
   "name": "simple-drawing-app",
   "version": "0.2.10",
+:  "releaseStage": "Alpha",
   "description": "A simple drawing application to draw lines between two points with snapping, selection, and customization features.",
   "main": "src/js/app.js",
   "scripts": {
